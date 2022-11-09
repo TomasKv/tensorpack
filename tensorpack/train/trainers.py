@@ -5,7 +5,7 @@ import multiprocessing as mp
 import os
 import sys
 import tensorflow as tf
-from tensorpack.compat import tfv1
+from tensorpack.tensorpack.compat import tfv1
 
 from ..callbacks import CallbackFactory, RunOp
 from ..graph_builder.distributed import DistributedParameterServerBuilder, DistributedReplicatedBuilder
