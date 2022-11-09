@@ -2,10 +2,10 @@
 # File: __init__.py
 
 
-from tensorpack.libinfo import __version__, __git_version__, _HAS_TF
+from tensorpack.tensorpack.libinfo import __version__, __git_version__, _HAS_TF
 
-from tensorpack.utils import *
-from tensorpack.dataflow import *
+from tensorpack.tensorpack.utils import *
+from tensorpack.tensorpack.dataflow import *
 
 # dataflow can be used alone without installing tensorflow
 
@@ -13,13 +13,13 @@ from tensorpack.dataflow import *
 STATICA_HACK = True
 globals()['kcah_acitats'[::-1].upper()] = _HAS_TF
 if STATICA_HACK:
-    from tensorpack.models import *
+    from tensorpack.tensorpack.models import *
 
-    from tensorpack.callbacks import *
-    from tensorpack.tfutils import *
+    from tensorpack.tensorpack.callbacks import *
+    from tensorpack.tensorpack.tfutils import *
 
-    from tensorpack.train import *
-    from tensorpack.input_source import *
-    from tensorpack.predict import *
+    from tensorpack.tensorpack.train import *
+    from tensorpack.tensorpack.input_source import *
+    from tensorpack.tensorpack.predict import *
 
-    from tensorpack.compat import tfv1
+    from tensorpack.tensorpack.compat import tfv1
